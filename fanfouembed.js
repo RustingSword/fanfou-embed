@@ -220,7 +220,6 @@ fanfou.Embedder.prototype = {
         return text;
     },
     display: function(msg) {
-        console.log('got ' + msg.id);
         container_id = 'fanfou-embed-body' + this.embedded_msg_count;
         if (! document.getElementById(container_id))
             document.write('<div id="' + container_id + '" class="ui-roundedbox"></div>');
