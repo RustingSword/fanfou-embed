@@ -216,7 +216,13 @@ fanfou.Embedder.prototype = {
             method = '<a href="https://help.fanfou.com/mobile_wap.html" target="_blank">手机上网</a>';
         else
             method = msg.source;
-        text += method + ' 发送';
+        text += method;
+
+        if (msg.repost_status_id) {
+            text += ' 转自 <a href="https://fanfou.com/statuses/' + msg.repost_status_id + '" target="_blank">' + msg.repost_screen_name + '</a>';
+        } else {
+            text += ' 发送';
+        }
         return text;
     },
     display: function(msg) {
