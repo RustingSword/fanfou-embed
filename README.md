@@ -4,7 +4,7 @@
 
 见`demo.html`:
 
-```
+```html
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8"/>
@@ -30,5 +30,7 @@ result:
 ## 致谢
 
 JS 代码来自[饭否博客插件](http://fanfou.com/badge/step3?bsp=other&type=js)
+
 CSS代码来自[饭否主站](http://static.fanfou.com/css/base.css?v=85a0092e)
+
 饭否 API 参考文档[statuses.show](https://github.com/FanfouAPI/FanFouAPIDoc/wiki/statuses.show)
